@@ -2,8 +2,8 @@
   <nav>
     <ul>
       <li><a href="#" [routerLink]='[""]'>HOME</a></li>
-      <li><a href="#" [routerLink]='["login"]'>LOGIN</a></li>
-      <li><a href="#" [routerLink]='["member"]'>MEMBER</a></li>
+      <li *ngIf="!isLogged"><a href="#" [routerLink]='["login"]'>LOGIN</a></li>
+      <li *ngIf="isLogged"><span class="logOut" style="cursor: pointer; text-decoration-line: underline" (click)='logOut()'>LOGOUT</span></li>
     </ul>
   </nav>
 </header>
