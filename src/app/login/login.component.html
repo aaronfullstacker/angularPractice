@@ -2,10 +2,11 @@
 <label>
   Email: 
 </label>
-<input placeholder="Email:" #email>
+<input placeholder="Email:" #email value="a@a.com">
 <label>
   Password: 
 </label>
-<input placeholder="Password:" #password>
+<input placeholder="Password:" #password value="aaa">
 
-<button (click)='login(email,password)' type="button">login</button>
+<!-- <button (click)='login(email,password)' type="button">login</button> -->
+<button (click)='login(email,password)' type="button" class="btn btn-dark ml-1">Login</button>

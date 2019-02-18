@@ -1,9 +1,17 @@
-<p>
-  member works!
-</p>
-<h2>your weaker even then...</h2>
-<h1>Shu</h1>
-
-<p>
-  {{memberData|json}}
-</p>
+<div *ngIf='memberData'>
+  <p>
+    {{memberData|json}}
+  </p>
+  <p>
+    id: {{memberData.id}}
+  </p>
+  <p>
+    budget(ILS): {{memberData.budgetUSD | currency}}
+  </p>
+  <p>
+    totalProducts: {{memberData.totalProducts}}
+  </p>
+  <p>
+    lastPurchase: {{memberData.lastPurchase}}
+  </p>
+</div>

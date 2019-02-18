@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MemberService } from '../services/member.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-member',
@@ -17,4 +18,5 @@ export class MemberComponent implements OnInit {
     })
   }
 
-}
+  }
+

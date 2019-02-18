@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { MemberComponent } from './member/member.component';
 import { MemberService } from './services/member.service';
+import { CurrencyPipe } from './pipes/currency.pipe';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MemberService } from './services/member.service';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    MemberComponent
+    MemberComponent,
+    CurrencyPipe
   ],
   imports: [
     BrowserModule,
